@@ -22,7 +22,7 @@ public class FirstController {
 
 
     @GetMapping("/capitalize")
-    String greeting(@RequestParam(name = "name", required = false, defaultValue = "capitalize word ") String name,
+    String capital(@RequestParam(name = "name", required = false, defaultValue = "capitalize word ") String name,
                     Model model) {
 
         model.addAttribute("name", name.toUpperCase());
